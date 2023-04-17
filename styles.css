@@ -1,0 +1,84 @@
+body {
+  background-color: rgb(208, 208, 208);
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.col {
+  height: 120vh;
+  background-color: #fff;
+  width: inherit;
+}
+.title {
+  height: 85px;
+  background-color: #8469c9;
+  color: #fff;
+  margin-top: -21px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.title h1 {
+  position: relative;
+  top: 24px;
+  left: 25px;
+}
+.bottom button {
+  position: relative;
+  top: -11px;
+  right: -174px;
+  color: #472f83;
+  background-color: #fff;
+  font-size: 44pt;
+  border: none;
+  width: 67px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.btn-check {
+  color: #fff;
+  background-color: #955b95;
+  border: none;
+  width: 70px;
+  height: 35px;
+}
+
+.btn-delete {
+  color: #fff;
+  background-color: #695b95;
+  border: none;
+  width: 60px;
+  height: 35px;
+  margin: 0 5px;
+}
+.reminder {
+  width: 420px;
+  height: 50px;
+  border: 1px solid #aba0c5;
+  color: #000;
+  background-color: #fff;
+  list-style: none;
+  line-height: 50px;
+  margin: 5px auto;
+  position: relative;
+  right: 20px;
+  padding: 10px;
+  display: -webkit-inline-box;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2px;
+}
+
+.text {
+  width: 280px;
+}
+.bottom {
+  color: #000;
+  background-color: #472f83;
+  padding: 28px;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+  position: relative;
+  bottom: 124px;
+}
