@@ -29,7 +29,7 @@ body {
 .bottom button {
   position: relative;
   top: -11px;
-  right: -174px;
+  right: -186px;
   color: #472f83;
   background-color: #fff;
   font-size: 44pt;
@@ -64,12 +64,15 @@ body {
   line-height: 50px;
   margin: 5px auto;
   position: relative;
-  right: 20px;
+  right: 12px;
   padding: 10px;
   display: -webkit-inline-box;
   box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2px;
 }
-
+.actions {
+  position: relative;
+  right: -3px;
+}
 .text {
   width: 280px;
 }
@@ -81,4 +84,27 @@ body {
   border-top-right-radius: 60%;
   position: relative;
   bottom: 124px;
+}
+@media (max-width: 800px) {
+  .bottom button {
+    position: relative;
+    top: -9px;
+    right: -125px;
+    font-size: 44pt;
+    width: 67px;
+  }
+  .reminder {
+    width: 325px;
+    line-height: 50px;
+    position: relative;
+    right: 29px;
+  }
+  .actions {
+    position: relative;
+    right: 20px;
+  }
+
+  .text {
+    width: 197px;
+  }
 }
