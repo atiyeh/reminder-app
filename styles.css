@@ -113,7 +113,7 @@ body {
   }
   .actions {
     position: relative;
-    right: 20px;
+    right: -15px;
   }
 
   .text {
