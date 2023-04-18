@@ -1,12 +1,17 @@
 const list = document.getElementsByClassName("list")[0];
 const newReminder = document.getElementById("newReminder");
-function createreminder(id, message) {
+function createreminder(id, [message, Date]) {
   const li = document.createElement("li");
   li.id = id;
   li.className = "reminder";
   const div = document.createElement("div");
   div.className = "text";
   div.innerText = message;
+
+  const div2 = document.createElement("div");
+  div2.className = "date";
+  div2.innerText = Date;
+  div.appendChild(div2);
 
   if (message && message.length > 45) {
     alert("we only accept 45 charecters");
@@ -48,7 +53,8 @@ function createreminder(id, message) {
 }
 newReminder.addEventListener("click", function () {
   let message = prompt("please enter a reminder ");
+  let Date = prompt("please enter a date");
   let id = Math.ceil(Math.random() * 100);
-  let reminder = createreminder(id, message);
+  let reminder = createreminder(id, [message, Date]);
   list.appendChild(reminder);
 });

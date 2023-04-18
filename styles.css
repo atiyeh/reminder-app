@@ -75,6 +75,7 @@ body {
 }
 .text {
   width: 280px;
+  line-height: 2;
 }
 .bottom {
   color: #000;
@@ -84,6 +85,11 @@ body {
   border-top-right-radius: 60%;
   position: relative;
   bottom: 124px;
+}
+.date {
+  line-height: 2px;
+  font-size: 15px;
+  opacity: 70%;
 }
 @media (max-width: 800px) {
   .bottom button {
@@ -106,5 +112,6 @@ body {
 
   .text {
     width: 197px;
+    line-height: 2;
   }
 }
