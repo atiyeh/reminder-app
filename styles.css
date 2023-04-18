@@ -42,17 +42,19 @@ body {
   color: #fff;
   background-color: #955b95;
   border: none;
-  width: 70px;
-  height: 35px;
+  width: 55px;
+  height: 31px;
+  font-size: 8px;
 }
 
 .btn-delete {
   color: #fff;
   background-color: #695b95;
   border: none;
-  width: 60px;
-  height: 35px;
   margin: 0 5px;
+  width: 55px;
+  height: 31px;
+  font-size: 8px;
 }
 .reminder {
   width: 420px;
@@ -66,16 +68,19 @@ body {
   position: relative;
   right: 12px;
   padding: 10px;
+  padding-top: 0px;
+
   display: -webkit-inline-box;
   box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2px;
 }
 .actions {
   position: relative;
-  right: -3px;
+  right: -23px;
 }
 .text {
   width: 280px;
   line-height: 2;
+  font-size: 15px;
 }
 .bottom {
   color: #000;
@@ -104,6 +109,7 @@ body {
     line-height: 50px;
     position: relative;
     right: 29px;
+    padding-top: 0px;
   }
   .actions {
     position: relative;
