@@ -82,6 +82,10 @@ body {
   line-height: 2;
   font-size: 15px;
 }
+.text.checked {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
 .bottom {
   color: #000;
   background-color: #472f83;
@@ -92,7 +96,7 @@ body {
   bottom: 124px;
 }
 .date {
-  line-height: 2px;
+  line-height: 15px;
   font-size: 15px;
   opacity: 70%;
 }
