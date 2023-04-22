@@ -1,7 +1,14 @@
 body {
   background-color: rgb(208, 208, 208);
 }
-
+* {
+  font-family: Vazirmatn;
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url("Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 900;
+}
 .container {
   max-width: 500px;
   width: 100%;
