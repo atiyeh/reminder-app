@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reminder-App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,11 +18,11 @@
         <div class="input-header">
           <div class="input-section">
             <div class="top-row">
-              <input type="datetime" class="indate" placeholder="تاریخ" />
+              <input type="date" class="indate" placeholder="تاریخ" />
               <input
                 type="number"
                 class="inmoney"
-                onkeypress="/[0-9]/i"
+                onkeypress="return /\d/i.test(event.key)"
                 placeholder="مبلغ"
               />
             </div>

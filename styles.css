@@ -29,25 +29,14 @@ body {
   border-bottom-right-radius: 20px;
 }
 
-.btn-check {
-  color: #fff;
-  background-color: #955b95;
-  border: none;
-  width: 57px;
-  height: 38px;
-}
 .btn-check,
 .btn-delete {
-  font-size: 15px;
-}
-.btn-delete {
-  color: #fff;
-  background-color: #695b95;
+  color: #8469c9;
+  font-size: 25px;
+  background: none;
   border: none;
-  margin: 0 5px;
-  width: 55px;
-  height: 31px;
 }
+
 .reminder {
   width: 420px;
   height: 50px;
@@ -63,10 +52,6 @@ body {
   padding-top: 0px;
   display: -webkit-inline-box;
   box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2px;
-}
-.actions {
-  position: relative;
-  right: -23px;
 }
 .text {
   width: 280px;
@@ -120,10 +105,15 @@ input[type="number"] {
   margin: 10px;
   text-align: right;
   border-width: 0px;
-  padding: 0px 5px 0px 0px;
+  padding: 0px 15px 0px 0px;
+  border-radius: 15px;
 }
 .save-btn {
   width: 35%;
   padding: 10px;
   margin: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #775abf;
+  border: 3px solid #8469c9;
 }
