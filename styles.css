@@ -27,6 +27,8 @@ body {
   margin-top: -21px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  position: sticky;
+  top: 0;
 }
 .btn-check:hover,
 .btn-delete:hover {
@@ -102,13 +104,13 @@ input[type="number"] {
   text-align: right;
   border-width: 0px;
   padding: 0px 15px 0px 0px;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 .save-btn {
   width: 35%;
   padding: 10px;
   margin: 10px;
-  border-radius: 15px;
+  border-radius: 8px;
   background-color: #fff;
   color: #775abf;
   border: 2px solid #8469c9;
