@@ -28,7 +28,10 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-
+.btn-check:hover,
+.btn-delete:hover {
+  opacity: 50%;
+}
 .btn-check,
 .btn-delete {
   color: #8469c9;
@@ -36,22 +39,15 @@ body {
   background: none;
   border: none;
 }
-
 .reminder {
-  width: 420px;
-  height: 50px;
+  width: 90%;
+  height: 100%;
   border: 1px solid #aba0c5;
   color: #000;
   background-color: #fff;
-  list-style: none;
-  line-height: 50px;
-  margin: 5px auto;
-  position: relative;
-  right: 12px;
-  padding: 10px;
-  padding-top: 0px;
   display: -webkit-inline-box;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2px;
+  line-height: 90px;
+  box-shadow: rgb(0 0 0 / 15%) 1.5px 1.5px 2px;
 }
 .text {
   width: 280px;
@@ -115,5 +111,14 @@ input[type="number"] {
   border-radius: 15px;
   background-color: #fff;
   color: #775abf;
-  border: 3px solid #8469c9;
+  border: 2px solid #8469c9;
+}
+.save-btn:hover {
+  background-color: #8469c9;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.caption {
+  text-decoration: underline;
+  font-size: x-large;
 }

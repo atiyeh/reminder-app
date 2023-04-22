@@ -10,14 +10,17 @@ function createreminder(id, [message, date, caption]) {
     </div>
   </div>
   <div class="actions">
-    <button class="btn-check" onclick="onCheckReminder(${id})">Checked</button
-    ><button class="btn-delete" onclick="onDeleteReminder(${id})">Delete</button>
+    <button class="btn-check" onclick="onCheckReminder(${id})"><i  class="fa">&#xf00c;</i>
+</button
+    ><button class="btn-delete" onclick="onDeleteReminder(${id})"><i class="fa fa-times" aria-hidden="true"></i>
+</button>
   </div>
 </li>
 `;
 }
 function onDeleteReminder(id) {
     let reminderElement = document.querySelector(`#reminder-${id}`);
+    confirm("حذف شود؟");
     reminderElement.remove("li");
 }
 function onCheckReminder(id) {
