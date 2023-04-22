@@ -26,17 +26,10 @@ function onCheckReminder(id) {
 }
 
 newReminder.addEventListener("click", function () {
-    let message = prompt("please enter a reminder ");
-    if (message && message.length > 45) {
-        alert("we only accept 45 charecters");
-        return;
-    } else if (!message) {
-        alert("please enter a reminder");
-        return;
-    }
-    let Date = prompt("please enter a date");
-    let caption = prompt("please write  the details");
+    let money = document.getElementsByClassName("inmoney")[0].value;
+    let date = document.getElementsByClassName("indate")[0].value;
+    let description = document.getElementsByClassName("description")[0].value;
     let id = Math.ceil(Math.random() * 100);
-    let reminder = createreminder(id, [message, Date, caption]);
+    let reminder = createreminder(id, [money, date, description]);
     list.innerHTML = list.innerHTML + reminder;
 });
