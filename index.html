@@ -14,7 +14,12 @@
           <div class="input-section">
             <div class="top-row">
               <input type="datetime" class="indate" placeholder="تاریخ" />
-              <input type="number" class="inmoney" placeholder="مبلغ" />
+              <input
+                type="number"
+                class="inmoney"
+                onkeypress="/[0-9]/i"
+                placeholder="مبلغ"
+              />
             </div>
 
             <input type="text" class="description" placeholder="توضیحات" />
@@ -23,8 +28,7 @@
         </div>
         <ul class="list"></ul>
       </div>
-      <div class="bottom"><button>+</button></div>
-      <script src="index.js" async defer></script>
+      <script src="index.js"></script>
     </div>
   </body>
 </html>
