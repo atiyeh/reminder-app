@@ -29,27 +29,17 @@ body {
   border-bottom-right-radius: 20px;
 }
 
-.bottom button {
-  position: relative;
-  top: -11px;
-  right: -186px;
-  color: #472f83;
-  background-color: #fff;
-  font-size: 44pt;
-  border: none;
-  width: 67px;
-  border-radius: 50px;
-  font-weight: bold;
-}
 .btn-check {
   color: #fff;
   background-color: #955b95;
   border: none;
-  width: 55px;
-  height: 31px;
-  font-size: 8px;
+  width: 57px;
+  height: 38px;
 }
-
+.btn-check,
+.btn-delete {
+  font-size: 15px;
+}
 .btn-delete {
   color: #fff;
   background-color: #695b95;
@@ -57,7 +47,6 @@ body {
   margin: 0 5px;
   width: 55px;
   height: 31px;
-  font-size: 8px;
 }
 .reminder {
   width: 420px;
@@ -72,7 +61,6 @@ body {
   right: 12px;
   padding: 10px;
   padding-top: 0px;
-
   display: -webkit-inline-box;
   box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2px;
 }
@@ -89,15 +77,7 @@ body {
   text-decoration: line-through;
   text-decoration-color: red;
 }
-.bottom {
-  color: #000;
-  background-color: #472f83;
-  padding: 28px;
-  border-top-left-radius: 60%;
-  border-top-right-radius: 60%;
-  position: relative;
-  bottom: 124px;
-}
+
 .date {
   line-height: 15px;
   font-size: 15px;
@@ -119,6 +99,15 @@ body {
 .input-section {
   max-width: 86%;
   margin: auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 .indate,
 .inmoney {
