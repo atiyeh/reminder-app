@@ -3,18 +3,21 @@ const newReminder = document.getElementById("newReminder");
 function createreminder(id, [message, date, caption]) {
     return `<li class="reminder" id="reminder-${id}">
   <div class="text" id="text-${id}">
-  ${message}
-    <div class="date">
-    ${date}
+  <div class="number">
+    <div>${message}</div>
+    <div>${date}</div>
+  </div>
       <div class="caption">${caption}</div>
+        <div class="actions">
+    <div><button class="btn-check" onclick="onCheckReminder(${id})"><i  class="fa">&#xf00c;</i>
+      </button>
+      </div>
+    <div><button class="btn-delete" onclick="onDeleteReminder(${id})"><i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      </div>
     </div>
   </div>
-  <div class="actions">
-    <button class="btn-check" onclick="onCheckReminder(${id})"><i  class="fa">&#xf00c;</i>
-</button
-    ><button class="btn-delete" onclick="onDeleteReminder(${id})"><i class="fa fa-times" aria-hidden="true"></i>
-</button>
-  </div>
+
 </li>
 `;
 }
@@ -29,7 +32,8 @@ function onCheckReminder(id) {
 }
 
 newReminder.addEventListener("click", function () {
-    let money = document.getElementsByClassName("inmoney")[0].value;
+    let moneyInput = document.getElementsByClassName("inmoney")[0].value;
+    let money = Number(moneyInput).toLocaleString();
     let date = document.getElementsByClassName("indate")[0].value;
     let description = document.getElementsByClassName("description")[0].value;
     let id = Math.ceil(Math.random() * 100);
