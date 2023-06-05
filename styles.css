@@ -118,14 +118,17 @@ input[type="number"] {
 }
 .caption {
   text-decoration: underline;
-  font-size: large;
+  font-size: 20px;
   opacity: 90%;
   text-align: right;
+  margin-right: 13px;
 }
 .number {
   font-size: 22px;
   display: flex;
   justify-content: space-between;
+  margin-left: 17px;
+  margin-right: 17px;
 }
 .actions {
   background: #d4c4ed;

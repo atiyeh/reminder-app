@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.fontSize": 15,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": false,
+  "editor.guides.indentation": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true
+}
