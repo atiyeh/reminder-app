@@ -16,7 +16,8 @@ body {
 }
 
 .col {
-  height: 120vh;
+  height: fit-content;
+  min-height: 120vh;
   background-color: #fff;
   width: inherit;
 }
@@ -52,19 +53,14 @@ body {
   box-shadow: rgb(0 0 0 / 15%) 1.5px 1.5px 2px;
 }
 .text {
-  width: 280px;
+  width: 95%;
+  margin: 10px;
   line-height: 2;
   font-size: 15px;
 }
 .text.checked {
   text-decoration: line-through;
   text-decoration-color: red;
-}
-
-.date {
-  line-height: 15px;
-  font-size: 15px;
-  opacity: 70%;
 }
 
 .description {
@@ -122,5 +118,17 @@ input[type="number"] {
 }
 .caption {
   text-decoration: underline;
-  font-size: x-large;
+  font-size: large;
+  opacity: 90%;
+  text-align: right;
+}
+.number {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.actions {
+  background: #d4c4ed;
+  display: flex;
+  justify-content: space-evenly;
 }
