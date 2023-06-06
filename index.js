@@ -30,7 +30,6 @@ function onCheckReminder(id) {
     let textElement = document.querySelector(`#text-${id}`);
     textElement.className = "text checked";
 }
-
 newReminder.addEventListener("click", function () {
     let moneyInput = document.getElementsByClassName("inmoney")[0].value;
     let money = Number(moneyInput).toLocaleString();
@@ -38,5 +37,15 @@ newReminder.addEventListener("click", function () {
     let description = document.getElementsByClassName("description")[0].value;
     let id = Math.ceil(Math.random() * 100);
     let reminder = createreminder(id, [money, date, description]);
-    list.innerHTML = list.innerHTML + reminder;
+    if (description == "" && money.length <= 1 && date == "") {
+        alert("لطفا باکس های خالی را پر کنید");
+    } else if (description <= 8) {
+        alert("توضیحات نباید کمتر از ۸ کلمه باشد");
+    } else if (money.length <= 3) {
+        alert(" مبلغ نباید کمتر از۳ رقم باشد");
+    } else if (date == "") {
+        alert("تاریخ را مشخص کنید");
+    } else {
+        list.innerHTML = list.innerHTML + reminder;
+    }
 });
