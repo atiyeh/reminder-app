@@ -29,6 +29,7 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   position: sticky;
+  z-index: 100;
   top: 0;
 }
 .btn-check:hover,
