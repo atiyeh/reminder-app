@@ -39,7 +39,7 @@ newReminder.addEventListener("click", function () {
     let reminder = createreminder(id, [money, date, description]);
     if (description == "" && money.length <= 1 && date == "") {
         alert("لطفا باکس های خالی را پر کنید");
-    } else if (description <= 8) {
+    } else if (description.length <= 8) {
         alert("توضیحات نباید کمتر از ۸ کلمه باشد");
     } else if (money.length <= 3) {
         alert(" مبلغ نباید کمتر از۳ رقم باشد");
