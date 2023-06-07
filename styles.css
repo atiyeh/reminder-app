@@ -24,7 +24,7 @@ body {
 .input-header {
   background-color: #8469c9;
   color: #fff;
-  padding: 17px;
+  padding: 7px;
   margin-top: -21px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -34,19 +34,27 @@ body {
 }
 .btn-check:hover,
 .btn-delete:hover {
-  opacity: 50%;
+  color: #d4c4ed;
+  background: #8469c9;
 }
 .btn-check,
 .btn-delete {
   color: #8469c9;
   font-size: 25px;
-  background: none;
+  background: #d4c4ed;
   border: none;
+  margin: 5px;
+  border-radius: 8px;
+  height: 42px;
+  width: 72px;
 }
 .reminder {
   width: 90%;
   height: 100%;
   border: 1px solid #aba0c5;
+  border-radius: 20px;
+  margin-top: 15px;
+
   color: #000;
   background-color: #fff;
   display: -webkit-inline-box;
@@ -132,7 +140,6 @@ input[type="number"] {
   margin-right: 17px;
 }
 .actions {
-  background: #d4c4ed;
   display: flex;
   justify-content: space-evenly;
 }
