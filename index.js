@@ -1,3 +1,4 @@
+items = [];
 const list = document.getElementsByClassName("list")[0];
 const newReminder = document.getElementById("newReminder");
 function createreminder(id, [message, date, caption]) {
@@ -21,10 +22,29 @@ function createreminder(id, [message, date, caption]) {
 </li>
 `;
 }
+
+function refreshAllReminders() {
+    let reminderElements = document.getElementsByClassName(`reminder`);
+    for (const element of reminderElements) {
+        element.remove("li");
+    }
+    for (const item of items) {
+        let reminder = createreminder(item.id, [
+            item.money,
+            item.date,
+            item.description,
+        ]);
+        list.innerHTML = list.innerHTML + reminder;
+    }
+    console.log(items);
+}
+
 function onDeleteReminder(id) {
-    let reminderElement = document.querySelector(`#reminder-${id}`);
     confirm("حذف شود؟");
-    reminderElement.remove("li");
+    items = items.filter((item) => {
+        return item.id != id;
+    });
+    refreshAllReminders();
 }
 function onCheckReminder(id) {
     let textElement = document.querySelector(`#text-${id}`);
@@ -46,7 +66,13 @@ newReminder.addEventListener("click", function () {
         alert("تاریخ را مشخص کنید");
     } else {
         let id = Math.ceil(Math.random() * 100);
-        let reminder = createreminder(id, [money, date, description]);
-        list.innerHTML = list.innerHTML + reminder;
+
+        items.push({
+            money: money,
+            date: date,
+            description: description,
+            id: id,
+        });
+        refreshAllReminders();
     }
 });
