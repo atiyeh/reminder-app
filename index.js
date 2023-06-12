@@ -35,8 +35,7 @@ newReminder.addEventListener("click", function () {
     let money = Number(moneyInput).toLocaleString();
     let date = document.getElementsByClassName("indate")[0].value;
     let description = document.getElementsByClassName("description")[0].value;
-    let id = Math.ceil(Math.random() * 100);
-    let reminder = createreminder(id, [money, date, description]);
+
     if (description == "" && money.length <= 1 && date == "") {
         alert("لطفا باکس های خالی را پر کنید");
     } else if (description.length <= 8) {
@@ -46,6 +45,8 @@ newReminder.addEventListener("click", function () {
     } else if (date == "") {
         alert("تاریخ را مشخص کنید");
     } else {
+        let id = Math.ceil(Math.random() * 100);
+        let reminder = createreminder(id, [money, date, description]);
         list.innerHTML = list.innerHTML + reminder;
     }
 });
