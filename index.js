@@ -28,14 +28,13 @@ function refreshAllReminders() {
     for (const element of reminderElements) {
         element.remove("li");
     }
+    let reminder = [];
     for (const item of items) {
-        let reminder = createreminder(item.id, [
-            item.money,
-            item.date,
-            item.description,
-        ]);
-        list.innerHTML = list.innerHTML + reminder;
+        reminder.push(
+            createreminder(item.id, [item.money, item.date, item.description])
+        );
     }
+    list.innerHTML = reminder.join("");
     console.log(items);
 }
 
