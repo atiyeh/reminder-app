@@ -64,14 +64,27 @@ newReminder.addEventListener("click", function () {
     } else if (date == "") {
         alert("تاریخ را مشخص کنید");
     } else {
-        let id = Math.ceil(Math.random() * 100);
+        let same = false;
 
-        items.push({
-            money: money,
-            date: date,
-            description: description,
-            id: id,
-        });
-        refreshAllReminders();
+        for (let i = 0; i < items.length; i++) {
+            if (
+                money == items[i].money &&
+                date == items[i].date &&
+                description == items[i].description
+            ) {
+                same = true;
+            }
+        }
+        if (same == false) {
+            items.push({
+                money: money,
+                date: date,
+                description: description,
+                id: Math.ceil(Math.random() * 100),
+            });
+            refreshAllReminders();
+        } else {
+            alert("چک تکراری می باشد");
+        }
     }
 });
